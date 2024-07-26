@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  # Serviço para a aplicação Laravel
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: local
+      APP_DEBUG: true
+      APP_KEY: base64:random-key
+      DB_CONNECTION: pgsql
+      DB_HOST: my-postgres
+      DB_PORT: 5432
+      DB_DATABASE: estrategia_wms
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - "8000:8000"
+    # command: sh -c "php artisan migrate --force && php artisan config:cache && php artisan config:clear && php artisan cache:clear && php artisan route:cache && composer dump-autoload -o && php artisan serve --host 0.0.0.0"
+    command: sh -c "php artisan migrate --force && php artisan serve --host 0.0.0.0"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - my-network
+    depends_on:
+      - my-postgres
+
+  # Serviço para o banco de dados PostgreSQL
+  my-postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: estrategia_wms
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
