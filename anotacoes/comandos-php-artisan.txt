@@ -20,7 +20,7 @@ php artisan cache:clear
 # Executar Migrações Forçando a Execução: - Ambiente de Produção
 php artisan migrate --force
 
-# Executar Migrações Forçando a Execução: - Ambiente de Desenvolvimento
+# Executar Migrações: - Ambiente de Desenvolvimento
 php artisan migrate
 
 # Execulta várias operações de otimização, como criação de caches para configuração, rotas e visualizações. - Produção
