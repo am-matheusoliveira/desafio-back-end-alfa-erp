@@ -29,7 +29,6 @@ php artisan optimize --force
 # Execulta várias operações de otimização, como criação de caches para configuração, rotas e visualizações. - Desenvolvimento
 php artisan optimize
 
-
 # Gera arquivo de autoload e otimiza para melhorar o desempenho. executar apos adicionar novas classes ou alterar o composer.json.
 composer dump-autoload -o
 
