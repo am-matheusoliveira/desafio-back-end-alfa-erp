@@ -10,6 +10,8 @@ use Exception;
 use PDOException;
 use Symfony\Component\Console\Input\Input;
 
+use function Psy\debug;
+
 class EstrategiaWms extends Model
 {
     use HasFactory;
@@ -56,7 +58,6 @@ class EstrategiaWms extends Model
     # INSERÇÃO DO REGISTRO
     public function insert_register(Request $request)
     {
-        
         // Inserindo na Tabela Pai
         DB::table('tb_estrategia_wms')->insert([
             'ds_estrategia_wms' => $request->input('dsEstrategia'),
@@ -67,16 +68,13 @@ class EstrategiaWms extends Model
         // Ultimo ID Inserido
         $ultimo_id = DB::getPdo()->lastInsertId();
 
-        // Convertendo a String Json para Array
-        $novo_array = json_decode(json_encode($request->input('horarios')));
-        
         // Inserindo na Tabela Filha
-        foreach($novo_array as $registro){
-            DB::table('tb_estrategia_wms_horario_prioridade')->insert([                
+        foreach($request->input('horarios') as $registro){
+            DB::table('tb_estrategia_wms_horario_prioridade')->insert([
                 'cd_estrategia_wms' => $ultimo_id,
-                'ds_horario_inicio' => $registro->dsHorarioInicio,
-                'ds_horario_final'  => $registro->dsHorarioFinal,
-                'nr_prioridade'     => $registro->nrPrioridade,
+                'ds_horario_inicio' => $registro['dsHorarioInicio'],
+                'ds_horario_final'  => $registro['dsHorarioFinal'],
+                'nr_prioridade'     => $registro['nrPrioridade'],
                 'dt_modificado'     => date("Y-m-d H:i:s")                       
             ]);
         }
@@ -89,6 +87,6 @@ class EstrategiaWms extends Model
         }
 
         // Retornando resposta
-        return $response;
+        return $response;        
     }
 }
