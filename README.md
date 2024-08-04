@@ -20,7 +20,7 @@ O Sistema de Gerenciamento de Estratégias WMS (Warehouse Management System) é 
 ### Rotas
 
 - **POST `/estrategiaWMS`**: Endpoint para criar uma nova estratégia com horários e prioridades.
-- **GET `/estrategiaWMS/{cdEstrategia}/{dsHora}/{dsMinuto}/prioridade`**: Endpoint para consultar a prioridade de uma estratégia com base no horário.
+- **GET `/estrategiaWMS/{cdEstrategia}/{dsHora}/{dsMinuto}/prioridade`**: Endpoint para consultar a prioridade de uma estratégia com base no tipo da estratégia e horário.
 
 ### Configuração com Docker
 
@@ -46,7 +46,7 @@ Os usuários podem cadastrar novas estratégias, especificando a descrição e a
 
 ### Consulta de Prioridades
 
-Através da rota de consulta, o sistema retorna a prioridade da estratégia com base no horário informado pelo usuário, garantindo um gerenciamento eficiente das operações do armazém.
+Através da rota de consulta, o sistema retorna a prioridade da estratégia com base no tipo da estratégia e horário informado pelo usuário, garantindo um gerenciamento eficiente das operações do armazém.
 
 ## Como Executar o Projeto
 
