@@ -48,16 +48,40 @@ Os usuários podem cadastrar novas estratégias, especificando a descrição e a
 
 Através da rota de consulta, o sistema retorna a prioridade da estratégia com base no tipo da estratégia e horário informado pelo usuário, garantindo um gerenciamento eficiente das operações do armazém.
 
-## Como Executar o Projeto
-
-### Pré-requisitos
-
-- Docker
-- Docker Compose
-
-### Passos para Executar
-
-1. Clone o repositório:
-   ```bash
-   git clone <url-do-repositorio>
-   ```
+### Instalação
+Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
+### 1. Clonar o Repositório
+```
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DO_REPOSITORIO>
+```
+### 2. Instalar Dependências
+```
+composer install
+```
+### 3. Configurar o Arquivo `.env`
+Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente, especialmente as relacionadas ao banco de dados.
+```
+cp .env.example .env
+```
+Edite o arquivo `.env` para incluir suas configurações de banco de dados.<br>
+Aqui está um exemplo já configurado para rodar com Docker:
+```
+# PostreSQL
+DB_CONNECTION=pgsql
+DB_HOST=my-postgres
+DB_PORT=5432
+DB_DATABASE=estrategia_wms
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_TIMEZONE='America/Sao_Paulo'
+```
+### 4. Gerar a Chave da Aplicação
+```
+php artisan key:generate
+```
+### 5. Criar o Banco de Dados - estrategia_wms
+Ao executar o arquivo `docker-compose.yml` o banco de dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.
+```
+docker compose up
+```
