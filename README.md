@@ -77,7 +77,16 @@ DB_PASSWORD=postgres
 DB_TIMEZONE='America/Sao_Paulo'
 ```
 ### 4. Criar o Banco de Dados - estrategia_wms
-Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.
+Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
+Arquivo: `docker-compose.yml`.<br>
+Comando: `php artisan migrate`.
+### 5. Execute o Docker Compose:
 ```
-docker compose up -d
+docker-compose up -d
+```
+### 6. Importar a Collection do Postman:
+Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
+A aplicação estará disponível em:.
+```
+http://localhost:8000
 ```
