@@ -80,6 +80,7 @@ DB_TIMEZONE='America/Sao_Paulo'
 Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
 
 ### 5. Execute o Docker Compose:
+Acesse a raiz do projeto e execute:
 ```
 docker-compose up -d
 ```
