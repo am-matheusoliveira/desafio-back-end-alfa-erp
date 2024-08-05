@@ -79,7 +79,8 @@ DB_TIMEZONE='America/Sao_Paulo'
 ### 4. Criar o Banco de Dados - estrategia_wms
 Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
 Arquivo: `docker-compose.yml`.<br>
-Comando: `php artisan migrate`.
+Comando: `php artisan migrate`.<br>
+
 ### 5. Execute o Docker Compose:
 ```
 docker-compose up -d
