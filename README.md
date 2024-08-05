@@ -93,12 +93,12 @@ http://localhost:8000
 
 ### Conclusão
 
-Este projeto demonstra minhas habilidades no desenvolvimento de API RESTful com PHP e Laravel, incluindo:
-* Desenvolvimento de endpoints para buscar registros
-* Autenticação JWT
+Este projeto demonstra minhas habilidades no desenvolvimento de Rotas e Migrations com PHP e Laravel, incluindo:
+* Desenvolvimento de endpoints para criar e buscar registros
 * Respostas em formato JSON
-* Documentação com Swagger
-* Testes de integração
+* Conteinerização com Docker
+* Manipulação de Banco de Dados
+* Criação do arquivo `docker-compose.yml`
 ---
 Sinta-se à vontade para explorar o código e fazer melhorias.<br>
 Se tiver alguma dúvida, entre em contato.
