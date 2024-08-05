@@ -76,12 +76,8 @@ DB_USERNAME=postgres
 DB_PASSWORD=postgres
 DB_TIMEZONE='America/Sao_Paulo'
 ```
-### 4. Gerar a Chave da Aplicação
-```
-php artisan key:generate
-```
-### 5. Criar o Banco de Dados - estrategia_wms
+### 4. Criar o Banco de Dados - estrategia_wms
 Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.
 ```
-docker compose up
+docker compose up -d
 ```
