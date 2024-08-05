@@ -86,7 +86,7 @@ docker-compose up -d
 ```
 ### 6. Importar a Collection do Postman:
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
-A aplicação estará disponível em:.
+A aplicação estará disponível em:
 ```
 http://localhost:8000
 ```
