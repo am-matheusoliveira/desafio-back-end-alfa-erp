@@ -1,6 +1,7 @@
 # Sistema de Gerenciamento de Estratégias WMS
 
-O Sistema de Gerenciamento de Estratégias WMS (Warehouse Management System) é uma aplicação desenvolvida em PHP utilizando o framework Laravel 11 e banco de dados PostgreSQL 12+. Este sistema permite a criação, gerenciamento e consulta de estratégias de prioridade dentro de um ambiente de gerenciamento de armazém.
+O Sistema de Gerenciamento de Estratégias WMS (Warehouse Management System) é uma aplicação desenvolvida em PHP utilizando o framework Laravel 11 e banco de dados PostgreSQL 12+.<br /> 
+Este sistema permite a criação, gerenciamento e consulta de estratégias de prioridade dentro de um ambiente de gerenciamento de armazém.
 
 ## Funcionalidades Principais
 
