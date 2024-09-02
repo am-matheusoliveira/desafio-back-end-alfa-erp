@@ -28,7 +28,7 @@ Uma coleção do Postman é fornecida para facilitar a validação das funcional
 
 ## Ferramentas
 
-- PHP 8
+- PHP 8.0
 - Laravel 11
 - PostgreSQL 12+
 - Docker
