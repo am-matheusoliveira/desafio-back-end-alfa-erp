@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "892c34ec-f36d-48ba-b979-44f6ae24364b",
+		"_postman_id": "1b63d1f8-8b52-4e10-a755-aebe218b1e82",
 		"name": "Desafio Back-End - Rotas",
-		"description": "Buscar Prioridade pelos parametros - {cdEstrategia} - {dsHora} - {dsMinuto}",
+		"description": "Cadastrar Estrategias WMS e seu Horarios,\n\nBuscar Prioridade pelos parametros - {cdEstrategia} - {dsHora} - {dsMinuto}",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "36193510"
 	},
