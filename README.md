@@ -27,7 +27,6 @@ O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução e c
 Uma coleção do Postman é fornecida para facilitar a validação das funcionalidades do sistema.
 
 ### Ferramentas
-
 * PHP 8.0
 * Laravel 11
 * PostgreSQL 12+
@@ -37,15 +36,14 @@ Uma coleção do Postman é fornecida para facilitar a validação das funcional
 ## Como Funciona
 
 ### Cadastro de Estratégias
-
 Os usuários podem cadastrar novas estratégias, especificando a descrição e a prioridade. Além disso, podem definir horários específicos e suas respectivas prioridades para cada estratégia.
 
 ### Consulta de Prioridades
-
 Através da rota de consulta, o sistema retorna a prioridade da estratégia com base no tipo da estratégia, hora e minuto informados pelo usuário, garantindo um gerenciamento eficiente das operações do armazém.
 
 ### Instalação
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
+
 ### 1. Clonar o Repositório
 ```
 git clone https://github.com/am-matheusoliveira/desafio-back-end-alfa-erp.git
@@ -79,6 +77,7 @@ Acesse a raiz do projeto e execute:
 ```
 docker-compose up -d
 ```
+
 ### 6. Importar a Collection do Postman
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
 A aplicação estará disponível em:
@@ -87,7 +86,6 @@ http://localhost:8000
 ```
 
 ### Conclusão
-
 Este projeto demonstra minhas habilidades no desenvolvimento de Rotas e Migrations com PHP e Laravel, incluindo:
 * Desenvolvimento de endpoints para criar e buscar registros
 * Respostas em formato JSON
