@@ -98,7 +98,7 @@ Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticament
 ### 7. Execute o Docker Compose
 Na raiz do projeto execute o comando:
 ```
-docker-compose up -d
+docker compose up -d
 ```
 Esse comando cria as imagens e inicia os contêineres da aplicação e do banco de dados e inicia o Servidor Web Interno do Laravel. A aplicação estará disponível em:
 ```
