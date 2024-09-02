@@ -69,16 +69,32 @@ DB_USERNAME=postgres
 DB_PASSWORD=postgres
 DB_TIMEZONE='America/Sao_Paulo'
 ```
-### 4. Criar o Banco de Dados
+### 4. Mudanças no arquivo `server.php`, execute os passos a seguir para alterar este arquivo
+O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o seu arquivo `index.php` da pasta `/public` movido para a raiz da aplicação.<br />
+Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
+
+Execute os comandos abaixo de acordo com o seu Sistema Operacional.<br />
+Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
+```
+php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
+```
+Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
+```
+php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+rm anotacoes\new-server.php anotacoes\alterar_conteudo.php
+```
+
+### 5. Criar o Banco de Dados
 Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
 
-### 5. Execute o Docker Compose
+### 6. Execute o Docker Compose
 Acesse a raiz do projeto e execute:
 ```
 docker-compose up -d
 ```
 
-### 6. Importar a Collection do Postman
+### 7. Importar a Collection do Postman
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
 A aplicação estará disponível em:
 ```
