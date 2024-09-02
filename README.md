@@ -26,13 +26,13 @@ O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução e c
 ### Validação com Postman
 Uma coleção do Postman é fornecida para facilitar a validação das funcionalidades do sistema.
 
-## Ferramentas
+### Ferramentas
 
-- PHP 8.0
-- Laravel 11
-- PostgreSQL 12+
-- Docker
-- Postman
+* PHP 8.0
+* Laravel 11
+* PostgreSQL 12+
+* Docker
+* Postman
 
 ## Como Funciona
 
