@@ -94,15 +94,14 @@ Na raiz do projeto execute o comando:
 ```
 docker-compose up -d
 ```
-Esse comando cria as imagens e inicia os containers da aplicação e do banco de dados e inicia o Servidor Web Interno do Laravel.<br />
-A aplicação estará disponível em:
+Esse comando cria as imagens e inicia os contêineres da aplicação e do banco de dados e inicia o Servidor Web Interno do Laravel. A aplicação estará disponível em:
 ```
 http://localhost:8000
 ```
 
 ### 6. Importar a Collection do Postman
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
-Todas as rotas da apliação já estarão disponiveis para uso em:
+Todas as rotas da aplicação já estarão disponíveis para uso em:
 ```
 http://localhost:8000
 ```
