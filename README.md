@@ -106,6 +106,15 @@ Todas as rotas da aplicação já estarão disponíveis para uso em:
 http://localhost:8000
 ```
 
+### Conclusão
+Este projeto demonstra minhas habilidades no desenvolvimento de Rotas e Migrations com PHP e Laravel, incluindo:
+* Desenvolvimento de endpoints para criar e buscar registros
+* Respostas em formato JSON
+* Conteinerização com Docker
+* Manipulação de Banco de Dados
+* Criação do arquivo `docker-compose.yml`
+---
+
 ### Referências
 
 - **PHP 8.0**  
@@ -122,14 +131,7 @@ http://localhost:8000
 
 - **Postman**  
   [documentação oficial do Postman](https://learning.postman.com/docs/getting-started/introduction/).
-
-### Conclusão
-Este projeto demonstra minhas habilidades no desenvolvimento de Rotas e Migrations com PHP e Laravel, incluindo:
-* Desenvolvimento de endpoints para criar e buscar registros
-* Respostas em formato JSON
-* Conteinerização com Docker
-* Manipulação de Banco de Dados
-* Criação do arquivo `docker-compose.yml`
+  
 ---
 Sinta-se à vontade para explorar o código e fazer melhorias.<br>
 Se tiver alguma dúvida, entre em contato.
