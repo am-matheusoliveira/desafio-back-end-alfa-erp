@@ -44,7 +44,7 @@ Os usuários podem cadastrar novas estratégias, especificando a descrição e a
 
 Através da rota de consulta, o sistema retorna a prioridade da estratégia com base no tipo da estratégia, hora e minuto informados pelo usuário, garantindo um gerenciamento eficiente das operações do armazém.
 
-### Como Executar o Projeto
+### Instalação
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 ```
