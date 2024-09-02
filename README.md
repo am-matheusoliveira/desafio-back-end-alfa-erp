@@ -49,11 +49,29 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina local
 git clone https://github.com/am-matheusoliveira/desafio-back-end-alfa-erp.git
 cd desafio-back-end-alfa-erp
 ```
+
 ### 2. Instalar Dependências
 ```
 composer install
 ```
-### 3. Configurar o Arquivo `.env`
+
+### 3. Mudanças no arquivo `server.php`, execute os passos a seguir para alterar este arquivo
+O motivo de alterar este arquivo é devido ao fato de a aplicação ter tido o seu arquivo `index.php` da pasta `/public` movido para a raiz da aplicação.<br />
+Com isso, a URL não terá o nome **public** aparente para o usuário, proporcionando uma aparência mais profissional e também evitando erros de execução ao iniciar a aplicação com o servidor interno do Laravel.
+
+Execute os comandos abaixo de acordo com o seu Sistema Operacional.<br />
+Windows - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
+```
+php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+del anotacoes\new-server.php, anotacoes\alterar_conteudo.php
+```
+Linux - Copiar o conteúdo de um arquivo para outro e, em seguida, excluí-los.
+```
+php anotacoes\alterar_conteudo.php vendor\laravel\framework\src\Illuminate\Foundation\resources\server.php anotacoes\new-server.php
+rm anotacoes\new-server.php anotacoes\alterar_conteudo.php
+```
+
+### 4. Configurar o Arquivo `.env`
 Crie um arquivo `.env` a partir do `.env.example` e configure as variáveis de ambiente.</br>
 ```
 cp .env.example .env
@@ -69,17 +87,22 @@ DB_USERNAME=postgres
 DB_PASSWORD=postgres
 ```
 ### 4. Criar o Banco de Dados
-Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
+Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das tabelas do sistema.<br>
 
 ### 5. Execute o Docker Compose
 Na raiz do projeto execute o comando:
 ```
 docker-compose up -d
 ```
+Esse comando cria as imagens e inicia os containers da aplicação e do banco de dados e inicia o Servidor Web Interno do Laravel.<br />
+A aplicação estará disponível em:
+```
+http://localhost:8000
+```
 
 ### 6. Importar a Collection do Postman
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
-A aplicação estará disponível em:
+Todas as rotas da apliação já estarão disponiveis para uso em:
 ```
 http://localhost:8000
 ```
