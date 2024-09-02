@@ -48,20 +48,19 @@ Através da rota de consulta, o sistema retorna a prioridade da estratégia com 
 Siga os passos abaixo para configurar e executar o projeto em sua máquina local.
 ### 1. Clonar o Repositório
 ```
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DO_REPOSITORIO>
+git clone https://github.com/am-matheusoliveira/desafio-back-end-alfa-erp.git
+cd desafio-back-end-alfa-erp
 ```
 ### 2. Instalar Dependências
 ```
 composer install
 ```
 ### 3. Configurar o Arquivo `.env`
-Renomeie o arquivo `.env.example` para `.env` e configure as variáveis de ambiente, especialmente as relacionadas ao banco de dados.
+Crie um arquivo `.env` a partir do `.env.example` e configure as variáveis de ambiente.</br>
 ```
 cp .env.example .env
 ```
-Edite o arquivo `.env` para incluir suas configurações de banco de dados.<br>
-Aqui está um exemplo já configurado para rodar com Docker:
+Edite o arquivo `.env` para incluir suas configurações de banco de dados, use este exemplo já configurado para rodar com Docker:
 ```
 # PostreSQL
 DB_CONNECTION=pgsql
