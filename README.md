@@ -106,6 +106,23 @@ Todas as rotas da aplicação já estarão disponíveis para uso em:
 http://localhost:8000
 ```
 
+### Referências
+
+- **PHP 8.0**  
+  [documentação oficial do PHP 8.0](https://www.php.net/releases/8.0/).
+
+- **Laravel 11**  
+  [documentação oficial do Laravel](https://laravel.com/docs).
+
+- **PostgreSQL**  
+  [documentação oficial do PostgreSQL](https://www.postgresql.org/docs/).
+
+- **Docker**  
+  [documentação oficial do Docker](https://docs.docker.com/).
+
+- **Postman**  
+  [documentação oficial do Postman](https://learning.postman.com/docs/getting-started/introduction/).
+
 ### Conclusão
 Este projeto demonstra minhas habilidades no desenvolvimento de Rotas e Migrations com PHP e Laravel, incluindo:
 * Desenvolvimento de endpoints para criar e buscar registros
