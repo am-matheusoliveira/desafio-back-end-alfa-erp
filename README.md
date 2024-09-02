@@ -71,15 +71,15 @@ DB_USERNAME=postgres
 DB_PASSWORD=postgres
 DB_TIMEZONE='America/Sao_Paulo'
 ```
-### 4. Criar o Banco de Dados:
+### 4. Criar o Banco de Dados
 Ao executar o arquivo `docker-compose.yml` o Banco de Dados será automaticamente criado, e também sera executado o comando `php artisan migrate` para a criação das Tabelas.<br>
 
-### 5. Execute o Docker Compose:
+### 5. Execute o Docker Compose
 Acesse a raiz do projeto e execute:
 ```
 docker-compose up -d
 ```
-### 6. Importar a Collection do Postman:
+### 6. Importar a Collection do Postman
 Localize na pasta `/postman-collections` abra o Postman e importe a Collection.<br>
 A aplicação estará disponível em:
 ```
