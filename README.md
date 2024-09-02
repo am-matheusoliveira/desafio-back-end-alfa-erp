@@ -17,25 +17,22 @@ Este sistema permite a criação, gerenciamento e consulta de estratégias de pr
 - `tb_estrategia_wms_horario_prioridade`: Tabela para armazenar os horários e prioridades das estratégias.
 
 ### Rotas
-
 - **POST `/estrategiaWMS`**: Endpoint para criar uma nova estratégia com horários e prioridades.
 - **GET `/estrategiaWMS/{cdEstrategia}/{dsHora}/{dsMinuto}/prioridade`**: Endpoint para consultar a prioridade de uma estratégia com base no tipo da estratégia, hora e minuto informados.
 
 ### Configuração com Docker
-
 O projeto inclui um arquivo `docker-compose.yml` para facilitar a execução e configuração do ambiente de desenvolvimento com Docker.
 
 ### Validação com Postman
-
 Uma coleção do Postman é fornecida para facilitar a validação das funcionalidades do sistema.
 
-## Tecnologias Utilizadas
+## Ferramentas
 
-- **Linguagem de Programação**: PHP
-- **Framework**: Laravel 11
-- **Banco de Dados**: PostgreSQL 12+
-- **Containerização**: Docker
-- **Ferramenta de Teste de API**: Postman
+- PHP 8
+- Laravel 11
+- PostgreSQL 12+
+- Docker
+- Postman
 
 ## Como Funciona
 
