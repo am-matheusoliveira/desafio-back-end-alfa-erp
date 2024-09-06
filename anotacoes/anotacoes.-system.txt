@@ -53,9 +53,10 @@ SELECT * FROM tb_estrategia_wms;
 SELECT * FROM tb_estrategia_wms_horario_prioridade;
 
 CLI:
-docker exec -it desafio-back-end-alfa-erp-my-postgres-1 bash
-docker exec -it desafio-back-end-alfa-erp-app-1 bash
+docker exec -it desafio-estrategia-wms-my-postgres-1 bash
+docker exec -it desafio-estrategia-wms-app-1 bash
+
 
 Logs:
-docker logs desafio-back-end-alfa-erp-app-1
-docker logs desafio-back-end-alfa-erp-my-postgres-1
+docker logs desafio-estrategia-wms-app-1
+docker logs desafio-estrategia-wms-my-postgres-1
